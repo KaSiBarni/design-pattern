@@ -11,6 +11,18 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class EmployeesTableModelAdapterTest {
 
+    /**
+     * Meglévő objektum nem implementálja az elvárt interfészt, de használni akarjuk
+     * inkompatibilitás feloldása
+     * Esetleg nem tudjuk modosítani
+     *
+     * Gyakori félreértés: interfészt implementáló osztály üre metódus implementációkkal
+     *  (Java 8 óta default metódusok)
+     *
+     * JDK példa: InputStreamReader
+     *
+     *
+     */
     @Test
     public void test_create(){
         List<Employee> employees = Arrays.asList(

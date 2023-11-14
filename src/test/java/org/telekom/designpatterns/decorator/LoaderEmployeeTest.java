@@ -7,6 +7,15 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class LoaderEmployeeTest {
 
+    /**
+     * További felelőddégek dinamikus (futásidejű) csatolása az objektumhoz
+     * Egymásba ágyazhatóság (láncolhatóság )
+     * Kliensek, ha tudják hogy dekorátor van rajta, igánybe vehetik a szolgáltatásaikat
+     * Lás még: wrapper, function wrapper
+     *
+     * JDK példa: java.io.InputStream
+     */
+
     @Test
     public void TestLoad(){
         Employee employee = new EmployeeImpl(0L,null);

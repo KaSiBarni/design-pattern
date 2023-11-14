@@ -7,6 +7,20 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class EmployeeTest {
 
+    /**
+     *
+     * Az objektum létrehozás prototípus példány alapján
+     * Pédány másolat, klón
+     * Clone: deep, shallow
+     * Copy konstruktor
+     *
+     * JDK példa: java.lang.Object#clone()
+     * Java példa: Spring Framework prototype scope
+     * Java eszközök: Apache Commons BeanUtils
+     *
+     * @throws CloneNotSupportedException
+     */
+
     @Test
     public void test_clone() throws CloneNotSupportedException {
         Employee employee = new Employee("John Doe", new HourlyPayDetails(1000,50));

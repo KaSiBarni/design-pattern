@@ -7,6 +7,18 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class EmployeeTest {
 
+    /**
+     * Kölünböző osztály családok, de hasonló elven működnek
+     * Kliensnek nem kell róla tudnia, mely családot használja
+     * Abstrakt osztály család, diszjunk implementáció családok
+     * Abstrakt Factory tervezési mintával együtt
+     *
+     * GoF példa: ablakozó keretrenszerek használata
+     * Java példa: API,különböző implmentációkkal (JCP, JSR)
+     *
+     *
+     *
+     */
     @Test
     public void test_monthly_amount(){
         Employee employee = new Employee("John Doe", new MonthlyPayDetails(500), new MonthlyBonus(50));

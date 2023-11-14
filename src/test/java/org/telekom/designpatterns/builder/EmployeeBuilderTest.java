@@ -7,6 +7,22 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class EmployeeBuilderTest {
 
+    /**
+     * Létrehozási logika külön az objektumtól
+     * - létrehozás lépésenkénk, nem áll rendezlkezésre egyben a szükséges információ
+     * - Különbozó objektum állapot csoportok
+     * - Több féle képeen is felépíthető
+     *
+     * method chaning, fluent interface ( olvashatóság )
+     *
+     * -- Tulajdonságok
+     *
+     * Definiálhatunk egy alapértelmezett állapotot
+     * Ha nincs meg minden információ, kivételt dobhatunk
+     * Teleszkőp konstrukorok helyett
+     * Nem lehet "félkész" objektum
+     *
+     */
     @Test
     public void test_employee_build(){
         //fluent interface ezért szépen lehet láncolni a methodusokat

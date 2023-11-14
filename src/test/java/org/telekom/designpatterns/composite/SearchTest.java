@@ -10,6 +10,22 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class SearchTest {
 
+    /**
+     * Bizonyos elemek más elemeket tartalmazhatnak, bizonyos elemek nem- klienseknek ezeket ne kelljen megkülönböztetnie
+     * Egész-rész hierarchia megvalósítása, azon interfész használható a csomópontokon
+     *
+     * JDK példa: Swing komponensek
+     *
+     * Tulajdonságok:
+     *      - tipikusan fa hierarchia
+     *      - bejárás
+     *      - egyszerűbb kliens, nincs különbségtéte a közbülső csomópontok és levélelemek között
+     *      - új komponens bevezetése egyszerűbb
+     *      - néha túl általános lehet
+     *
+     *      problémák: ciklikusság, végtelen ciklus, rekurzió
+     */
+
     @Test
     public void testSearch(){
 

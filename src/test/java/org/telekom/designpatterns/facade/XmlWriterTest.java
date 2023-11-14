@@ -7,6 +7,15 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class XmlWriterTest {
 
+    /**
+     * Könnyebb hozzáférés az alrendszerekhez, kliens dolgának megkönnyítése
+     *  - komplex rendszer megfelelő inicializálásokat, hívási sorendet, paramétereket igényelhet-ezek elrejtése
+     *  - Egységesebb magasabb szintű interfész
+     *
+     *
+     *
+     */
+
     @Test
     public void testWrite(){
 

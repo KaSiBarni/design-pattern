@@ -7,6 +7,16 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class PayDetailsFactoryTest {
 
+    /**
+     * Interface különböző implementációjának példányosítására
+     *
+     * Létrehozandó objektum interfésze ismert
+     * Factory method esetén a létrehozónak is az interfésze definiált
+     *
+     * Különböző implementációi különböző implementációt példánysítanak
+     *
+     */
+
     @Test
     public void test_hourly(){
         PayDetailsFactory factory = new HourlyPayDetailsFactory();
